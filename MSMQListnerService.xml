@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThreadList>
+  <ThreadDefinition ThreadName="Worker1" NumberThreads="2" Transactions="True">
+    <Description>Message Worker with 2 Threads with Transactions</Description>
+    <InputQueue>.\private$\Input</InputQueue>
+    <ErrorQueue>.\private$\Error</ErrorQueue>
+    <SmtpServer>YOUR SMTP SEVER</SmtpServer>
+    <ErrorEmail>noreaply@yourdomain.com</ErrorEmail>
+    <ErrorSubject>Stopping MSMQListner</ErrorSubject>
+    <MessageLimit>5000</MessageLimit>
+    <Delay>10000</Delay>
+  </ThreadDefinition>
+</ThreadList>
